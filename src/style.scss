@@ -1,0 +1,30 @@
+body{
+  justify-content: center;
+  background-color: rgb(200, 62, 228);
+}
+
+.slider{
+  border:2px solid #ccc;
+  height: 6px;
+  width: 300px;
+  border-radius:16px;
+  position: relative;
+}
+.slider__bar{
+  appearance: none;
+  position: absolute;
+  top: 0px;
+  border-radius: 16px;
+  height: inherit;
+  width: inherit;
+  margin: 0;
+}
+.slider__btn{
+  height: 12px;
+  width: 12px;
+  background: #45F396;
+  border: 2px solid #FFFFFF;
+  position: absolute;
+  top:-5px;
+  border-radius: 50%;
+}
