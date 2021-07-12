@@ -41,6 +41,11 @@ module.exports = {
                 }
                 // npm install babel-loader @babel/core @babel/preset-env -D
             },
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },
             /** CSS */
             {
                 test: /\.css$/i,

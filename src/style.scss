@@ -1,9 +1,9 @@
 body{
   justify-content: center;
-  background-color: rgb(200, 62, 228);
+  background-color: rgb(255, 255, 255);
 }
 
-.slider{
+.slider{  
   border:2px solid #ccc;
   height: 6px;
   width: 300px;
@@ -23,9 +23,91 @@ body{
 .slider__btn{
   height: 12px;
   width: 12px;
-  background: #45F396;
-  border: 2px solid #FFFFFF;
+  background: #fa8500;
+  border: 2px solid #000000;
   position: absolute;
   top:-5px;
   border-radius: 50%;
+}
+.control-panel{
+  display: flex;
+  justify-content: space-between;
+  .control-panel__inputs{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+  }
+  label{
+    display: flex;
+  }
+  span{
+   display: block;
+   height: 36px;
+   width: 50px;
+   background: #615c70;
+   text-align: center;
+   line-height: 35px;
+   color: white;
+   font-family: sans-serif;
+  }
+  input{
+   height: 30px;
+   width: 60px;
+   border: 2px solid #615c70;
+   padding-left: 10px;
+   color: #615c70;
+   font-size: 14px;
+  }
+  input:focus{
+    outline: none;
+  }
+}
+.contol-panel__buttons{
+  padding-top: 25px;
+  width: 700px;
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  margin-left: 15px;
+  label{
+    display: flex;
+    font-family: sans-serif;
+    color: #615c70;
+    text-align: center;
+    line-height: 35px;
+  }
+
+}
+.control-panel__text{
+  padding: 0 15px;
+}
+.control-panel__checkbox{
+  appearance: none;
+  margin: 0;
+}
+.checkmark{
+  display: block;
+  height: 32px;
+  width: 70px;
+  border: 2px solid #615c70;
+  position: relative;
+}
+.checkmark::before{
+  content: "";
+  position: absolute;
+  height: 34px;
+  width: 36px;
+  background: #615c70;
+  right: -1px;
+}
+.control-panel__checkbox:checked + .checkmark::before{
+  left: -1px;
+}
+.slider__tip{
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 25px;
+  background: #615c70;
+  top: -30px;
 }
