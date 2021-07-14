@@ -11,6 +11,12 @@ body{
   position: relative;
   margin: 250px;
 }
+.slider__progress{
+  background: linear-gradient(21deg, #dd03e4, #5611ec);
+  height: inherit;
+  width: 0;
+  border-radius: 16px 0 0 16px;
+}
 .slider__bar{
   appearance: none;
   position: absolute;
@@ -21,10 +27,9 @@ body{
   margin: 0;
 }
 .slider__btn{
-  height: 12px;
-  width: 12px;
-  background: #fa8500;
-  border: 2px solid #000000;
+  height: 16px;
+  width: 16px;
+  background: linear-gradient(21deg, #dd03e4, #5611ec);
   position: absolute;
   top:-5px;
   border-radius: 50%;
