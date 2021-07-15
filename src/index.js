@@ -9,7 +9,9 @@ const sliderProgressBar = document.querySelector(".slider__progress");
 sliderBar.onclick = function(event){
   let sliderPos = sliderBar.getBoundingClientRect();
   let btnPos = sliderBtn.getBoundingClientRect();
-  let btnShift = event.clientX - btnPos.left;
+  let leftShift = event.clientX -sliderPos.left;
+  sliderBtn.style.left = leftShift - btnPos.width/2 + "px";
+  sliderProgressBar.style.width = leftShift  +"px";
 }
 sliderBtn.onmousedown = function(event){
   event.preventDefault();
@@ -50,6 +52,7 @@ sliderBtn.onmousedown = function(event){
       let sliderTipWidth = sliderTip.getBoundingClientRect().width;
       let sliderTipShift = sliderTipWidth/2 - sliderBtnWidth/2;
       sliderTip.style.left = leftShift - sliderTipShift + "px";
+      sliderTip.innerHTML = leftShift;
     }else{
       return;
     }
@@ -87,6 +90,7 @@ function addSliderTip () {
   let sliderTipWidth = sliderTip.getBoundingClientRect().width;
   let sliderTipShift = sliderTipWidth/2 - sliderBtnWidth/2;
   sliderTip.style.left = sliderBtn.offsetLeft - sliderTipShift + "px";
+  sliderTip.innerHTML = sliderBtn.offsetLeft;
 }
 function clearSliderTip(){
   let sliderTip = document.querySelector(".slider__tip")
@@ -100,3 +104,9 @@ tipBtn.addEventListener("change", function(event){
     clearSliderTip();
   }
 });
+
+/* slider scale logic*/
+function addSliderScale(){
+  let sliderScale = document.createElement("div");
+  
+}

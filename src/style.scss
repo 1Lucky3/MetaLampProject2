@@ -34,6 +34,12 @@ body{
   top:-5px;
   border-radius: 50%;
 }
+.slider__scale{
+  width: inherit;
+  height: 20px;
+  background-color: #dd03e4;
+  margin-top: 10px; 
+}
 .control-panel{
   display: flex;
   justify-content: space-between;
@@ -115,4 +121,8 @@ body{
   width: 25px;
   background: #615c70;
   top: -30px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  color: #FFFFFF;
 }
