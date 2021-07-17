@@ -1,2 +1,0 @@
-import './Models/sliderBtn.ts'
-

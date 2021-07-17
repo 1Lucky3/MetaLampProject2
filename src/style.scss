@@ -37,8 +37,12 @@ body{
 .slider__scale{
   width: inherit;
   height: 20px;
-  background-color: #dd03e4;
   margin-top: 10px; 
+  display: flex;
+  justify-content: space-between;
+}
+.slider__scale_number{
+  color: #615c70;
 }
 .control-panel{
   display: flex;

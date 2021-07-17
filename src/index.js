@@ -1,5 +1,5 @@
 import './style.scss'
-import './slider.ts'
+import './sliderController.ts'
 
 const sliderBtn = document.querySelector(".slider__btn");
 const sliderBar = document.querySelector(".slider__bar");
@@ -108,5 +108,26 @@ tipBtn.addEventListener("change", function(event){
 /* slider scale logic*/
 function addSliderScale(){
   let sliderScale = document.createElement("div");
-  
+  sliderScale.className = "slider__scale";
+  slider.appendChild(sliderScale)
+  for(let i = 0; i <= 9; i++){
+    let scaleNumber = document.createElement("span")
+    scaleNumber.className = "slider__scale_number"
+    sliderScale.appendChild(scaleNumber)
+    scaleNumber.innerHTML = i;
+  }
 }
+function clearSliderScale() { 
+  let sliderScale = document.querySelector(".slider__scale")
+  sliderScale.parentNode.removeChild(sliderScale)
+}
+const scaleBtn = document.getElementById("scale");
+scaleBtn.addEventListener("click", function(){
+  if(this.checked){
+    addSliderScale()
+
+  }
+  else{
+    clearSliderScale()
+  }
+});

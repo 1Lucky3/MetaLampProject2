@@ -8,7 +8,59 @@
 <script defer src="bundle.js"></script></head>
 <body>
   <div class="slider">
+    <div class="slider__progress"></div>
     <div class="slider__bar"></div>
     <span class="slider__btn"></span>
+  </div>
+  <div class="control-panel">
+    <div class="control-panel__inputs">
+      <label class="control-panel__min">
+        <span>min</span>
+        <input type="number">
+      </label>
+      <label for="">
+        <span>max</span>
+        <input type="number">
+      </label>
+      <label for="">
+        <span>step</span>
+        <input type="number">
+      </label>
+      <label for="">
+        <span>from</span>
+        <input type="number">
+      </label>
+      <label for="">
+        <span>to</span>
+        <input type="number">
+      </label>
+    </div>
+  </div>
+  <div class="contol-panel__buttons">
+    <label>
+      <span class="control-panel__text">vertical</span>
+      <input class="control-panel__checkbox" id="vertical" type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="contol-panel_range">
+      <span class="control-panel__text">range</span>
+      <input class="control-panel__checkbox" type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label>
+      <span class="control-panel__text">scale</span>
+      <input class="control-panel__checkbox" id="scale" type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label>
+      <span class="control-panel__text">bar</span>
+      <input class="control-panel__checkbox" type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label>
+      <span class="control-panel__text">tip</span>
+      <input class="control-panel__checkbox" id="tip" type="checkbox">
+      <span class="checkmark"></span>
+    </label>
   </div>
 </html>
