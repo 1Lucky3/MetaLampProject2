@@ -6,7 +6,7 @@ const webpack = require('webpack');
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
-    entry: './index.js',
+    entry: './sliderController.ts',
     mode: 'development',
     devtool: 'inline-source-map',
     devServer: {
